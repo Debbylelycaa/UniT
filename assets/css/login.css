@@ -1,0 +1,221 @@
+/* Set the height of the body and html to 100% */
+body {
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+/* tingginya container to 100vh (viewport height) */
+.container-full-height {
+  height: 100vh;
+}
+
+/* oppss slicenya login :) */
+.group8 {
+  position: relative;
+}
+.container-8 {
+  padding-top: 30px;
+}
+
+.main-input8 {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 350px;
+  border: none;
+  border-bottom: 1px solid #fffefe;
+  background: transparent;
+  color: #ffffff;
+}
+
+.main-input8:focus {
+  outline: none;
+  border-bottom-color: rgb(255, 204, 128);
+}
+.lebal-email8 {
+  color: #fffbfb;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}  
+.main-input8:focus ~ .lebal-email8,
+.main-input8:valid ~ .lebal-email8 {
+  top: -20px;
+  font-size: 14px;
+  color: rgb(255, 204, 128);
+}
+.highlight-span8 {
+  position: absolute;
+  height: 60%;
+  width: 0px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.main-input8:focus ~ .highlight-span8 {
+  -webkit-animation: input-focus 0.3s ease;
+  animation: input-focus 0.3s ease;
+}
+@keyframes input-focus {
+  from {
+  background: #000000;
+  }
+  to {
+  width: 185px;
+  }
+}
+
+/* bikin biar left (red) and right (white) halves */
+.red-half {
+  z-index: 2;
+  height: 100%;
+  background: linear-gradient(
+    250deg,
+    rgba(173, 0, 0, 0.84) 21.85%,
+    rgba(203, 62, 20, 0.84) 56.26%,
+    rgba(219, 95, 30, 0.84) 80.42%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40%;
+}
+
+.red-half .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.red-half img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin-bottom: 16px; /* nambah margin diantara image and text */
+  background: #fff;
+  padding: 15px;
+}
+
+.red-half h1 {
+  background: linear-gradient(
+    108deg,
+    #fff 60.52%,
+    rgba(255, 255, 255, 0) 101.16%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.09),
+    0px 11px 6px rgba(0, 0, 0, 0.05), 0px 19px 8px rgba(0, 0, 0, 0.01),
+    0px 30px 8px rgba(0, 0, 0, 0);
+  font: 500 20px 'Inter-Medium', sans-serif;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.white-half {
+  z-index: 1;
+  position: relative;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-half .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .white-half img {
+    width: 180px;
+    border-radius: 20%;
+    margin-bottom: 16px; /* tambah margin antara  image and text */
+    background: #fff;
+    padding: 15px;
+  }
+  
+  .white-half h2 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+.no-padding {
+  padding: 0;
+}
+
+.card-login {
+  padding-top: 1px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-login.active {
+  background-color: #fffbf0;
+  box-shadow: 
+        0px 6px 14px 0px rgba(173, 54, 20, 0.1),
+        0px 26px 26px 0px rgba(173, 54, 20, 0.09),
+        0px 58px 35px 0px rgba(173, 54, 20, 0.05),
+        0px 103px 41px 0px rgba(173, 54, 20, 0.01),
+        0px 160px 45px 0px rgba(173, 54, 20, 0);
+}
+
+.login-opt.active {
+  background-color: #fffbf0;
+}
+
+.btn-custom-login {
+  background-color:  #BA2819;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-custom-login:hover {
+  background-color: #fff;
+  color: #DB5F1E;
+  border: 1px solid #DB5F1E;
+}
+
+.btn-custom-login-white {
+  background-color:  #fff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn-custom-login-white:hover {
+  background-color: #DB5F1E;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
+
