@@ -1,0 +1,36 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.background-merah {
+  position: fixed;
+  z-index: 2;
+}
+
+.background-putih {
+  position: fixed;
+  z-index: 1;
+}
+
+.background-foto {
+  left: 36%;
+  position: fixed;
+  z-index: -2;
+  margin-bottom: ;
+}
+
+.box {
+  display: flex;
+  z-index: 2;
+}
+
+.login {
+  color: #FFF;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 2;
+  margin-top: 180px;
+}

@@ -1,0 +1,30 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.background-left1 {
+    width: 900px;
+    height: 5254.22px;
+    position: fixed;
+    z-index: 3;
+}
+
+.background-left2 {
+    width: 100px;
+    height: 5254.22px;
+    position: fixed;
+    z-index: 1;
+}
+
+.background-regis {
+    position: fixed;
+}
+
+.background-right1 {
+    width: 4172.529px;
+    height: 4739.953px;
+    transform: rotate(36.786deg);
+    flex-shrink: 0;
+    position: fixed;
+}
