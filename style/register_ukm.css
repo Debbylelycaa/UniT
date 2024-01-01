@@ -1,0 +1,455 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.register-ukm {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regis-bg {
+    z-index: 1;
+    position: fixed;
+}
+
+.group8 {
+    position: relative;
+  }
+  .container-8 {
+    padding-top: 30px;
+  }
+  
+  .container-9 {
+    padding-top: 50px;
+  }
+  
+  .main-input8 {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 900px;
+    border: none;
+    border-bottom: 1px solid #fffefe;
+    background: transparent;
+    color: #ffffff;
+  }
+
+  .main-input9 {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 900px;
+    border: none;
+    border: 1px solid #F6E4E4;
+    background-color: #F6E4E4;
+    /* opacity: 20%; */
+    height: 80px;
+    color: black;
+    margin-top: 15px;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .main-input8:focus {
+    outline: none;
+    border-bottom-color: rgb(255, 204, 128);
+  }
+
+  .main-input9:focus {
+    outline: none;
+    border-bottom-color: rgb(255, 204, 128);
+  }
+
+  .lebal-email8 {
+    color: #fffbfb;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }  
+
+  .lebal-email9 {
+    color: #fffbfb;
+    font-weight: normal;
+    position: relative;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    margin-top: 30px;
+  }  
+
+  .main-input8:focus ~ .lebal-email8,
+  .main-input8:valid ~ .lebal-email8 {
+    top: -20px;
+    font-size: 14px;
+    color: rgb(255, 204, 128);
+  }
+
+  .main-input9:focus ~ .lebal-email9,
+  .main-input9:valid ~ .lebal-email9 {
+    top: -20px;
+    font-size: 14px;
+    color: rgb(255, 204, 128);
+  }
+
+  .highlight-span8 {
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .main-input8:focus ~ .highlight-span8 {
+    -webkit-animation: input-focus 0.3s ease;
+    animation: input-focus 0.3s ease;
+  }
+
+  @keyframes input-focus {
+    from {
+    background: #000000;
+    }
+    to {
+    width: 185px;
+    }
+  }
+
+  /* logo & Bukti SK Pengesahan Organisasi Kepengurusan */
+  .file-upload-form {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    padding-top: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .file-upload-label input {
+    display: none;
+  }
+  .file-upload-design svg {
+    margin-left: 15px;
+  }
+  .file-upload-label {
+    cursor: pointer;
+    background: transparent;
+    padding: 30px 70px;
+    border-radius: 10px;
+    border: 3px dashed #FEE;  
+    box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+    width: 700px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .file-upload-label-bukti {
+    cursor: pointer;
+    background: transparent;
+    padding: 30px 70px;
+    border-radius: 10px;
+    border: 3px dashed #FEE;  
+    box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+    width: 900px;
+    height: 200px;
+  }
+  .file-upload-label-bukti input {
+    display: none;
+}
+  .file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .browse-button {
+    padding: 5px 30px;
+    border-radius: 59px;
+    background: #FFF;
+    color: black;
+    transition: all 0.3s;
+    width: 120px;
+  }
+  .browse-button:hover {
+    background-color: rgb(14, 14, 14);
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  /* end of logo & Bukti SK Pengesahan Organisasi Kepengurusan*/
+
+/* struktur & bagan */
+.custom-label {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.card-kepengurusan-ex {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.20);
+  padding: 10px;
+}
+
+.card-kepengurusan {
+  width: 130px;
+  height: 254.47px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.20);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-kepengurusan svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-kepengurusan-title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-img-p-2 {
+  padding: 8px;
+  border-radius: 20px;
+}
+
+/* button */
+.btn-custom-login-white {
+  background-color:  #fff;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 120px;
+  height: 39px;
+  margin-top: 70px;
+}
+
+.btn-custom-login-white:hover {
+  background-color: #DB5F1E;
+  color: #fff;
+  border: 1px solid #fff;
+}
+  
+
+/* .modal-dialog modal-dialog-centered .modal-content custom-modal p-3 .modal-body text-center */
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardpopup{
+  --gray: rgba(229, 231, 235, 1);
+  width: 800px;
+  height: 20rem;
+  display: flex;
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(258deg, #CE4B1D -6.59%, #FFFAF9 84.63%);
+  padding: 1.5rem;
+}
+
+.card-1 { 
+  width: 46%;
+  border-radius: 0.75rem;
+  border-style: dashed;
+  border-color: #AD0000;
+  background-color: var(--white);
+  /* animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite; */
+}
+
+.rightpopup {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+}
+
+.card-3 {
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: var(--gray);
+  /* animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite; */
+}
+
+.bottompopup {
+  margin-top: auto;
+  display: contents;
+  grid-gap: 0.75rem;
+  gap: 0.75rem;
+  text-align:end ;
+}
+
+.card-4 {
+  height: 2rem;
+  width: 33%;
+  border-radius: 9999px;
+  background-color: var(--gray);
+  /* animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite; */
+  
+}
+
+.containerpopup {
+  padding-top: 5px;
+}
+.group8-modal {
+  position: relative;
+}
+
+.main-input8-modal {
+  font-size: 16px;
+  padding: 8px 8px 12px 5px;
+  display: block;
+  width: 350px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background: transparent;
+  color: #000000;
+}
+
+.main-input8-modal:focus {
+  outline: none;
+  border-bottom-color: rgb(255, 255, 255);
+  
+}
+.lebal-email8-modal {
+  color: #000000;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}  
+.main-input8-modal:focus ~ .lebal-email8-modal,
+.main-input8-modal:valid ~ .lebal-email8-modal {
+  top: -13px;
+  font-size: 15px;
+  color: rgb(93, 20, 20);
+}
+.highlight-span8-modal {
+  position: absolute;
+  height: 60%;
+  width: 0px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.main-input8-modal:focus ~ .highlight-span8-modal {
+  -webkit-animation: input-focus 0.3s ease;
+  animation: input-focus 0.3s ease;
+}
+@keyframes input-focus {
+  from {
+  background: #000000;
+  }
+  to {
+  width: 185px;
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: .2;
+  }
+}
+
+/* button */
+.btn-custom {
+  background-color: #DB5F1E;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-custom:hover {
+  background-color: #fff;
+  color: #DB5F1E;
+  border: 1px solid #DB5F1E;
+}
+
+.btn-custom {
+  background-color: #DB5F1E;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-custom:hover {
+  background-color: #fff;
+  color: #DB5F1E;
+  border: 1px solid #DB5F1E;
+}
+
+.btn-custom-secondary {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-custom-secondary:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #DB5F1E;
+}
+
+.browse-button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #DB5F1E;
+}
