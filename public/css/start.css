@@ -1,0 +1,672 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Inter', sans-serif;
+}
+
+.wave{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index:-1;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;
+}
+
+img{
+    
+    justify-content: flex-end;
+    
+}
+.img img{
+    width: 300px;
+}
+
+.login-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+    width: 380px;
+    padding:15px;
+    margin: 60px 0;
+    
+}
+
+.left{
+    float:left;
+    
+}
+.right{
+    float: right;
+}
+
+/* register */
+
+.register-body{
+    background-image: url(../images/yey.png)
+}
+.group {
+    position: relative;
+}
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    padding-right: 50px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.form p {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: rgb(255, 255, 255);
+}
+
+.container-1 {
+    padding-top: 30px;
+}
+
+.main-input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+
+.main-input:focus {
+    outline: none;
+    border-bottom-color:rgb(255, 204, 128) ;
+}
+.lebal-email {
+    color: #fffbfb;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}  
+.main-input:focus ~ .lebal-email,
+.main-input:valid ~ .lebal-email {
+    top: -20px;
+    font-size: 14px;
+    color: rgb(255, 204, 128);
+}
+.highlight-span {
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.main-input:focus ~ .highlight-span {
+    -webkit-animation: input-focus 0.3s ease;
+    animation: input-focus 0.3s ease;
+}
+@keyframes input-focus {
+    from {
+    background: #f4ebeb;
+    }
+    to {
+    width: 185px;
+    }
+}
+.submit {
+
+    margin-top: 4rem;
+    padding: 10px 20px;
+    border-radius:10px;
+    border: none;
+}
+
+/* forgot Password */
+
+.register-body2{
+    background-image: url("../images/yey.png");
+}
+.group2 {
+    position: relative;
+}
+
+.form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.form2 p {
+    padding-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: rgb(255, 255, 255);
+}
+
+.form2 h6{
+    color: #ffffff;
+    font-size: medium;
+}
+.container-2 {
+    padding-top: 30px;
+}
+
+.main-input1 {
+    font-size: 18px;
+    padding: 50px 10px 10px 5px;
+    display: block;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #fffefe;
+    background: transparent;
+    color: #ffffff;
+}
+
+.main-input1:focus {
+    outline: none;
+    border-bottom-color: rgb(255, 204, 128);
+}
+.lebal-email1 {
+    color: #fffbfb;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 50px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}  
+.main-input1:focus ~ .lebal-email1,
+.main-input1:valid ~ .lebal-email1 {
+    top: 25px;
+    font-size: 14px;
+    color: rgb(255, 204, 128);
+}
+.highlight-span1 {
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.main-input1:focus ~ .highlight-span1 {
+    -webkit-animation: input-focus 0.3s ease;
+    animation: input-focus 0.3s ease;
+}
+@keyframes input-focus {
+    from {
+    background: rgb(255, 204, 128);
+    }
+    to {
+    width: 185px;
+    }
+}
+.submit1 {
+
+    margin-top: 4rem;
+    padding: 10px 20px;
+    border-radius:10px;
+    border: none;
+}
+
+/* konfirmasi kata sandi baru*/
+
+.register-body3{
+    background-image: url("../images/yey.png");
+}
+.group3 {
+    position: relative;
+}
+
+.form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    padding-right: 50px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.form3 p {
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: rgb(255, 255, 255);
+}
+
+.container-3 {
+    padding-top: 30px;
+}
+
+.main-input3 {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #fffefe;
+    background: transparent;
+    color: #ffffff;
+}
+
+.main-input3:focus {
+    outline: none;
+    border-bottom-color: rgb(255, 204, 128);
+}
+.lebal-email3 {
+    color: #fffbfb;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}  
+.main-input3:focus ~ .lebal-email3,
+.main-input3:valid ~ .lebal-email3 {
+    top: -20px;
+    font-size: 14px;
+    color: rgb(255, 204, 128);
+}
+.highlight-span3 {
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.main-input3:focus ~ .highlight-span3 {
+    -webkit-animation: input-focus 0.3s ease;
+    animation: input-focus 0.3s ease;
+}
+@keyframes input-focus {
+    from {
+    background: #000000;
+    }
+    to {
+    width: 185px;
+    }
+}
+.submit3 {
+
+    margin-top: 4rem;
+    padding: 10px 20px;
+    border-radius:10px;
+    border: none;
+}
+
+/* kodeOtp */
+
+.register-body4{
+    background-image: url("../images/yey.png");
+}
+
+.form4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 190px;
+    padding-bottom: 80px;
+    padding-right: 50px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.form4 a{
+    color: #000000;
+}
+.title {
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: rgb(255, 255, 255);
+}
+
+.message {
+    color: #fffefe;
+    font-size: 14px;
+    margin-top: 4px;
+    text-align: center
+}
+
+.inputs {
+    margin-top: 10px
+}
+
+
+.inputs input {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: none;
+    border-bottom: 1.5px solid #ffffff;
+    margin: 0 10px;
+}
+
+.form4 h7 {
+    padding-top: 50px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.inputs input:focus {
+    border-bottom: 1.5px solid royalblue;
+    outline: none;
+}  
+.action {
+    margin-top: 24px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    align-self: center;
+}
+
+/* navbar */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 1rem;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #555;
+}
+
+/* form */
+.register-body5{
+    background-image: url("../images/yey.png");
+}
+
+form5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 190px;
+    padding-bottom: 80px;
+    padding-right: 50px;
+    padding-left: 100px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+/* oppss */
+.btn-custom-login {
+    background-color:  #BA2819;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn-custom-login:hover {
+    background-color: #fff;
+    color: #DB5F1E;
+    border: 1px solid #DB5F1E;
+}
+
+.btn-custom-login-white {
+    background-color:  #fff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn-custom-login-white:hover {
+    background-color: #DB5F1E;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* opps2 */
+.btn-custom-login1 {
+    background-color:  #BA2819;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn-custom-login1:hover {
+    background-color: #fff;
+    color: #DB5F1E;
+    border: 1px solid #DB5F1E;
+}
+
+.btn-custom-login-white1 {
+    background-color:  #fff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn-custom-login-white1:hover {
+    background-color: #DB5F1E;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* card */
+.form4-card-input {
+    all: unset;
+}
+
+.form4-card-input-wrapper {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.form4-card-input {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2rem;
+    text-align: start;
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+}
+
+.form4-card-input-bg {
+    content: '';
+    width: 240px;
+    height: 60px;
+    margin: auto;
+    inset: 0;
+    bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 12px;
+    background-color: rgba(206, 206, 206, 0.664);
+}
+ /* lup pass */
+
+
+.digit-group {
+	input {
+		width: 50px;
+		height: 45px;
+		background-color: lighten(#c03c3c, 5%);
+		border: none;
+		line-height: 50px;
+		text-align: center;
+		font-size: 24px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+		color: black;
+		margin: 0 2px;
+	}
+
+	.splitter {
+		padding: 0 5px;
+		color: white;
+		font-size: 24px;
+	}
+}
+
+.prompt {
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: white;
+}
+
